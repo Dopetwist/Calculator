@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 12.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blueviolet;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem lime;
+}
+
+.input-field {
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 0.2rem solid #000;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    text-align: right;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    border: 0.2rem solid #000;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: palevioletred;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#switch-btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+}
+
+.cee {
+    color: orangered;
+}
