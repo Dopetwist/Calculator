@@ -113,7 +113,7 @@ for (let i = 0; i < buttonLength; i++) {
                 break;
 
             case "ON/OFF":
-                switchOff(buttonValue);
+                switchOff();
                 break;
                 
             default:
@@ -124,7 +124,7 @@ for (let i = 0; i < buttonLength; i++) {
     
 }
 
-function switchOff(buttonValue) {
+function switchOff() {
 
     if (document.querySelector("#display").value === " ") {
         document.querySelector("#display").value = "0";
@@ -135,9 +135,13 @@ function switchOff(buttonValue) {
 
 function clear () {
 
-    let erase = document.querySelector("#display").value;
+    let input = document.querySelector("#display").value;
 
-    document.querySelector("#display").value = erase.substring(0, erase.length - 1);
+    if (input.length === 1) {
+        document.querySelector("#display").value = "0";
+    } else {
+        document.querySelector("#display").value = input.substring(0, input.length - 1);
+    }
 }
 
 function solve () {
@@ -174,70 +178,3 @@ function removeDoubleZero () {
     }
 
 }
-
-// function detectSwitch () {
-
-//     if (document.querySelector("#display").value === " ") {
-
-        
-        
-
-//     } else {
-//         document.querySelector("#display").value;
-//     }
-
-// }
-
-/*document.querySelector("#switch-btn").addEventListener("click", function () {
-
-    let input = document.querySelector("#display").value;
-    
-    switch (input) {
-        case " ":
-            document.querySelector("#display").value = "0";
-            break;
-
-        default:
-            document.querySelector("#display").value = " ";
-            break;
-    }
-    
-}) */
-
-
-// document.getElementById("display").value = " ";
-
-
-
-
-
-/* activeKey = document.querySelectorAll(".btn")[i].innerHTML;
-
-function main () {
-
-}
-
-
-let condition = 0; // Initial condition
-
-function toggleCheck() {
-  // Toggle conditions
-  condition = (condition + 1) % 3;
-
-  // Apply different conditions based on the state
-  switch (condition) {
-    case 0:
-       console.log("Condition 1 applied.");
-      break;
-    case 1:
-      console.log("Condition 2 applied.");
-      break;
-    case 2:
-      console.log("Condition 3 applied.");
-      break;
-    // Add more cases if needed
-    default:
-      console.log("Invalid Condition");
-      break;
-  }
-}*/
