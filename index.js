@@ -1,5 +1,12 @@
 
+const otherBtns = document.querySelectorAll(".others");
+const screen = document.getElementById("display");
+const switchBtn = document.getElementById("switch-btn");
+
 let buttonLength = document.querySelectorAll("button").length;
+let isOn = true;
+
+
 
 for (let i = 0; i < buttonLength; i++) {
 
@@ -111,10 +118,6 @@ for (let i = 0; i < buttonLength; i++) {
             case "⬅":
                 clear();
                 break;
-
-            case "ON/OFF":
-                switchOff();
-                break;
                 
             default:
                 console.log(buttonValue);
@@ -124,13 +127,30 @@ for (let i = 0; i < buttonLength; i++) {
     
 }
 
-function switchOff() {
 
-    if (document.querySelector("#display").value === " ") {
-        document.querySelector("#display").value = "0";
+
+switchBtn.addEventListener("click", () => {
+
+    isOn = !isOn;
+
+    if (isOn) {
+        screen.value = "0";
+        switchBtn.textContent = "OFF";
+        enableButtons();
     } else {
-        document.querySelector("#display").value = " ";
+        screen.value = "";
+        switchBtn.textContent = "ON";
+        disableButtons();
     }
+});
+
+
+function enableButtons() {
+    otherBtns.forEach(btn => btn.disabled = false);
+}
+
+function disableButtons() {
+    otherBtns.forEach(btn => btn.disabled = true);
 }
 
 function clear () {
