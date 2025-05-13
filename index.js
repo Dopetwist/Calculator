@@ -20,57 +20,39 @@ for (let i = 0; i < buttonLength; i++) {
                 break;
         
             case "9":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "8":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "7":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "6":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "5":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "4":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "3":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "2":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "1":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "0":
@@ -82,33 +64,23 @@ for (let i = 0; i < buttonLength; i++) {
                 break;
         
             case "+":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "-":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "/":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case "*":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
         
             case ".":
-                removeDoubleZero();
-                removeZero();
-                document.getElementById("display").value += buttonValue;
+                value(buttonValue);
                 break;
             
             case "=":
@@ -162,6 +134,12 @@ function clear () {
     } else {
         document.querySelector("#display").value = input.substring(0, input.length - 1);
     }
+}
+
+function value (buttonValue) {
+    removeDoubleZero();
+    removeZero();
+    document.getElementById("display").value += buttonValue;
 }
 
 function solve () {
