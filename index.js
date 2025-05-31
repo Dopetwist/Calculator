@@ -7,7 +7,7 @@ let buttonLength = document.querySelectorAll("button").length;
 let isOn = true;
 
 
-
+// Loop through buttons
 for (let i = 0; i < buttonLength; i++) {
 
     document.querySelectorAll("button")[i].addEventListener("click", function() {
@@ -100,7 +100,7 @@ for (let i = 0; i < buttonLength; i++) {
 }
 
 
-
+// Switch button function
 switchBtn.addEventListener("click", () => {
 
     isOn = !isOn;
@@ -125,6 +125,7 @@ function disableButtons() {
     otherBtns.forEach(btn => btn.disabled = true);
 }
 
+// Erase screen data
 function clear () {
 
     let input = document.querySelector("#display").value;
@@ -142,6 +143,7 @@ function value (buttonValue) {
     document.getElementById("display").value += buttonValue;
 }
 
+// Evaluate data
 function solve () {
 
     let x = document.querySelector("#display").value;
