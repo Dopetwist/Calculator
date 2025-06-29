@@ -1,6 +1,6 @@
 ## Overview 
 
-This is a simple calculator i built early 2024 using HTML, CSS and JavaScript.  
+A simple calculator i built early 2024 using HTML, CSS and JavaScript.  
 It carries out basic mathematical calculations.  
 
 It has a switch button which dynamically turns on or off the calculator device.
