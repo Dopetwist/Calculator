@@ -19,10 +19,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: blueviolet;
+    background-color: #8a2be2;
     padding: 0.8rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1.5rem lime;
+    box-shadow: 0 0 1.5rem #00ff00;
 }
 
 .input-field {
@@ -55,7 +55,7 @@ body {
 
 .btn:hover {
     color: #fff;
-    background-color: palevioletred;
+    background-color: #d87093;
     cursor: pointer;
     transition: .2s ease;
 }
@@ -65,5 +65,5 @@ body {
 }
 
 .cee {
-    color: orangered;
+    color: #ff4500;
 }
