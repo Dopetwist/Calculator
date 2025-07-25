@@ -9,8 +9,12 @@ It carries out basic mathematical calculations.
 `CSS`  
 `HTML`
 
-It has a switch button which dynamically turns on or off the calculator device using conditional statements.
+## 📍 Features
 
-## Future Plans
+* Display Screen.
+* A switch button which dynamically turns on or off the calculator device using conditional statements.
+* Numerical buttons.
+
+## 🚦 Future Plans
 
 It will be redesigned and modified to carry out other complex calculations.
