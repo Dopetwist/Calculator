@@ -5,8 +5,8 @@ It carries out basic mathematical calculations.
 
 ## ⚙️ Technologies
 
-`JavaScript`
-`CSS`
+`JavaScript`  
+`CSS`  
 `HTML`
 
 It has a switch button which dynamically turns on or off the calculator device using conditional statements.
