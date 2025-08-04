@@ -116,11 +116,12 @@ switchBtn.addEventListener("click", () => {
     }
 });
 
-
+// Activate all buttons
 function enableButtons() {
     otherBtns.forEach(btn => btn.disabled = false);
 }
 
+// Deactivate all buttons
 function disableButtons() {
     otherBtns.forEach(btn => btn.disabled = true);
 }
@@ -137,6 +138,7 @@ function clear () {
     }
 }
 
+// Display pressed button value
 function value (buttonValue) {
     removeDoubleZero();
     removeZero();
