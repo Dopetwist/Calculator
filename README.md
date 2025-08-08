@@ -17,4 +17,4 @@ It carries out basic mathematical calculations.
 
 ## 🚦 Future Plans
 
-It will be redesigned and modified to carry out other complex calculations.
+It would be refined to carry out other complex calculations.
