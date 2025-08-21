@@ -5,9 +5,9 @@ It carries out basic mathematical calculations.
 
 ## ⚙️ Technologies
 
-`JavaScript`  
-`CSS`  
-`HTML`
+`JavaScript`: For the core functionalities.
+`CSS`: Styling of the calculator.  
+`HTML`: Structure.
 
 ## 📍 Features
 
